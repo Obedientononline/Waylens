@@ -6,6 +6,17 @@ WayLens is an autonomous on-device artificial intelligence navigation assistant 
 
 ---
 
+## Overview
+
+WayLens provides an accessible, high-contrast user interface tailored for fast camera scanning, voice interaction, and real-time 2D floor map tracking.
+
+| Live Camera Navigation Mode | Demo Photo Upload Mode |
+|:---:|:---:|
+| ![WayLens Live Mode](docs/screenshots/Live_Mode.png) | ![WayLens Demo Mode](docs/screenshots/Demo_mode.png) |
+| *Continuous camera scanning with live HUD crosshair, voice toggle, and real-time step progress* | *Single photo inspection with instant OCR room detection and spoken guidance* |
+
+---
+
 ## 1. Problem Statement and University Focus
 
 University campuses present severe spatial navigation challenges for visually impaired and low-vision individuals:
@@ -118,8 +129,8 @@ Waylens/
 |   \-- floormap.js        : High-DPI interactive 2D floor map renderer
 |
 |-- docs/                  : Architectural documentation and diagrams
-|   |-- README.md          : Asset guidelines
 |   |-- WayLens_Problem_statement.pdf : Original project specification
+|   |-- architecture_plan.md          : Overall Project Architecture Working
 |   |-- architecture.png   : System architecture diagram
 |   |-- workflow.png       : Application workflow flowchart
 |   \-- screenshots/       : UI and navigation screenshots
@@ -140,7 +151,6 @@ Waylens/
 |   \-- audio_cache/       : Speech synthesis audio cache
 |
 \-- demo/                  : Demonstration recordings
-    |-- README.md          : Recording instructions
     \-- demo.mp4           : Video demonstration
 ```
 
@@ -284,3 +294,9 @@ Evaluation benchmark run across the complete multi-floor dataset (Ground, 1st, a
 ## 12. License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
+
+## 13. Project Status and Future Roadmap
+
+Note: This implementation serves as an initial prototype and working of the concept. The system will be completely updated, expanded, and refined in future releases to provide full, robust assistive capabilities tailored specifically for visually impaired and low-vision users across complex campus environments.
