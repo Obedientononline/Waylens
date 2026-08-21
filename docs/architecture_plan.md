@@ -1,6 +1,6 @@
-# WayLens — System Architecture Document
+# WayLens System Architecture Document
 
-> **Project**: WayLens — Generative AI Indoor Navigation Assistant  
+> **Project**: WayLens Generative AI Indoor Navigation Assistant  
 > **Type**: On-Device Multimodal AI System (Zero Cloud Dependencies)  
 > **Stack**: Python 3.10+ · FastAPI · PyTorch CPU · NetworkX · OpenCLIP · EasyOCR · Whisper · Ollama · Stable Diffusion  
 > **Generated**: August 2026  
@@ -111,7 +111,7 @@ graph TB
 
 ## 3. Layer Architecture (Detailed Breakdown)
 
-### 3.1 Client Layer — `static/`
+### 3.1 Client Layer - `static/`
 
 The client is a **single-page accessible mobile web application** served as static files.
 
@@ -155,7 +155,7 @@ graph LR
     Update --> MapUpdate
 ```
 
-#### FloorMap Canvas Engine — `floormap.js`
+#### FloorMap Canvas Engine - `floormap.js`
 
 The `FloorMapRenderer` class renders an architectural blueprint-style map at 60 FPS using `requestAnimationFrame`:
 
@@ -187,7 +187,7 @@ Hardcoded `NODE_COORDS` dictionary (116+ entries) and `EDGES` array (250+ pairs)
 
 ---
 
-### 3.2 Server Layer — API Gateway
+### 3.2 Server Layer - API Gateway
 
 #### [`server.py`](file:///c:/Users/Asus/Downloads/Waylens/src/server.py) — FastAPI REST API
 
@@ -264,7 +264,7 @@ sequenceDiagram
 
 ---
 
-### 3.3 Perception Layer — Computer Vision
+### 3.3 Perception Layer - Computer Vision
 
 #### [`localization.py`](file:///c:/Users/Asus/Downloads/Waylens/src/localization.py) — Multimodal Fusion Engine
 
@@ -360,7 +360,7 @@ graph LR
 
 ---
 
-### 3.4 Reasoning Layer — Routing & State
+### 3.4 Reasoning Layer - Routing & State
 
 #### [`building_graph.py`](file:///c:/Users/Asus/Downloads/Waylens/src/building_graph.py) — Spatial Knowledge Graph
 
@@ -419,7 +419,7 @@ graph TB
 | `get_adjacent_nodes(graph, node_id)` | Returns outgoing neighbors with edge metadata |
 | `validate_graph(graph)` | Integrity checks: connectivity, bidirectionality, cross-floor paths |
 
-#### [`routing.py`](file:///c:/Users/Asus/Downloads/Waylens/src/routing.py) — Dijkstra Router
+#### [`routing.py`](file:///c:/Users/Asus/Downloads/Waylens/src/routing.py) - Dijkstra Router
 
 ```mermaid
 graph LR
